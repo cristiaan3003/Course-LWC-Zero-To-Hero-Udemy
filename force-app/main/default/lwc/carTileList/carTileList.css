@@ -1,0 +1,8 @@
+c-car-tile{
+    min-width: 200px;
+    flex: 1;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}

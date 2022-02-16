@@ -1,18 +1,11 @@
-# Salesforce DX Project: Next Steps
+# LWC Course - Udemy
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project was created for use in  Udemy LWC course **Zero to Hero in Lightning Web Components**
 
-## How Do You Plan to Deploy Your Changes?
+ Udemy link:  [Zero to Hero in Lightning Web Components](https://www.udemy.com/course/zero-to-hero-in-lightning-web-components).
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+> force-app\main\default\lwc: This project containst Car App: video 147 and some other realted to previous excercises .
 
-## Configure Your Salesforce DX Project
+>z-misc. folder contains some extra resourses.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+> jobGitHubWebSite: Contains Website using  **Lightning Web Components**: Open Source [LWC OSS](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/get_started_oss) and [Heroku](https://www.heroku.com/).

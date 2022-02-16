@@ -1,0 +1,62 @@
+<template>
+    <lightning-card title="Filters" icon-name="standard:calibration">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-input 
+            label="Search key" 
+            type="search"
+            value={filters.searchKey}
+            onchange={handleSearchKeyChange}
+            ></lightning-input>
+
+            <section class="slider_section">
+                <lightning-slider 
+                label="Max Price" 
+                size="x-small" 
+                step="100" 
+                min="0" 
+                max="999999" 
+                value={filters.maxPrice}
+                onchange={handleMaxPriceChange}
+                ></lightning-slider>
+            </section>
+
+            <section class="category_section">
+                <h2>Category</h2>
+                <template if:true={categoryValues.data}>
+                    <template for:each={categoryValues.data.values} for:item="item">
+                        <lightning-input 
+                        type="checkbox" 
+                        key={item.label} 
+                        label={item.label} 
+                        data-name="categoryValues"
+                        data-value={item.value}
+                        checked 
+                        onchange={handleCheckBox}></lightning-input>
+                    </template>
+                </template>
+                <template if:true={categoryValues.error}>
+                    <div class="slds-text-color_error">{categoryErrorMessage}</div>
+                </template>
+            </section>
+
+            <section class="make_section">
+                <h2>Make</h2>
+                <template if:true={makeValues.data}>
+                    <template for:each={makeValues.data.values} for:item="item">
+                        <lightning-input 
+                        type="checkbox" 
+                        key={item.label} 
+                        label={item.label} 
+                        data-name="makeValues"
+                        data-value={item.value}
+                        checked
+                        onchange={handleCheckBox}></lightning-input>
+                    </template>
+                    <template if:true={makeValues.error}>
+                        <div class="slds-text-color_error">{makeErrorMessage}</div>
+                    </template>
+                </template>
+            </section>
+        </div>
+    </lightning-card>
+</template>

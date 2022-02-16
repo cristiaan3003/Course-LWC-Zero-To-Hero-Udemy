@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
 import {loadStyle} from 'lightning/platformResourceLoader'
 //import FONTAWESOME from '@salesforce/resourceUrl/fontawesome'
-import FONTAWESOME from '@salesforce/resourceUrl/fontawesome5'
+//import FONTAWESOME from '@salesforce/resourceUrl/fontawesome5'
 export default class MemoryGameLwc extends LightningElement {
 
     isLibLoaded = false

@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_medium">
+            <template if:true={carList.length}>
+                <div class="container">
+ 
+                        <template for:each={carList} for:item="item">
+  
+                                <c-car-tile key={item.Id} car={item} onselected={handleCarSelected}></c-car-tile>
+
+                        </template>
+
+                </div>
+            </template>
+
+            <template if:true={error}>
+                <c-placeholder message="Error when loading car list"></c-placeholder>
+            </template>
+            
+            <template if:false={carList.length}>
+                <c-placeholder message="No car matches the search"></c-placeholder>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>
